@@ -1,0 +1,11 @@
+<h2>Buscar por
+    <small>{{termino}}</small>
+</h2>
+
+<div class="card-columns">
+    <app-cards [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroes; let i=index"></app-cards>
+</div>
+
+<h1 *ngIf="vacioobje()">
+    Sin resultados
+</h1>

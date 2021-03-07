@@ -1,0 +1,22 @@
+<div class="container animated fadeIn Fast">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <img [src]="heroe.img" class="img-fluid" alt="...">
+        </div>
+        <div class="col-12 col-md-8 pt-5">
+            <h1 class="display-6">{{ heroe.nombre | uppercase }}</h1>
+            <h6 class="card-subtitle mb-2 text-muted">{{ heroe.casa }}</h6>
+            <p class="card-text">{{ heroe.bio }}</p>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-6">
+                    <p class="text-muted">Aparicion: {{heroe.aparicion | date:'y'}}</p>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/{{heroe.casa}}.png" class="img-fluid w-25" alt="...">
+                </div>
+            </div>
+            <a class="btn btn-primary" [routerLink]="['/heroes']">Atrás</a>
+        </div>
+    </div>
+</div>
