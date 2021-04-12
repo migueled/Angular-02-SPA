@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
+## Temas
+
+* Aplicación de una sola página (Single Page Application)
+* Creación de proyectos de Angular usando el CLI (Command Line Interface)
+* Bootstrap o librerías de terceros usando el Angular-CLI
+* Creación de rutas
+* Uso de RouterLink y RouterLinkActive
+* Uso del modulo Router
+* Obtención de parámetros vía URL.
+* Configuración de nuestro servicio en Angular para el manejo de data
+* Pipes
+* Uso del buscador del navbar para realizar una consulta a nuestro arreglo de héroes
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
