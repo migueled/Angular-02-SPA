@@ -55,28 +55,28 @@ export class HeroesService{
         }
       ];
 
-    constructor(){      
+    constructor() {
     }
 
-    getHeroes():Heroe[]{
+    getHeroes() : Heroe[] {
         return this.heroes;
     }
     
-    getHeroe(idx:number){
+    getHeroe( idx : number ) {
         return this.heroes[idx];
     }
 
-    buscarHeroes(termino:string){
-        let heroesArr:Heroe[]=[];
-        termino=termino.toLowerCase();
+    buscarHeroes( termino : string ) {
+        let heroesArr : Heroe[] = [];
+        termino = termino.toLowerCase();
 
-        for(let i=0;i<this.heroes.length;i++){
+        for( let i = 0 ; i < this.heroes.length ; i++ ){
 
-            let heroe=this.heroes[i];
+            let heroe  = this.heroes[i];
             let nombre = heroe.nombre.toLowerCase();
 
-            if( nombre. indexOf(termino) >=0){
-                heroe.idx=i;
+            if( nombre. indexOf(termino) >= 0 ){
+                heroe.idx = i;
                 heroesArr.push( heroe );
             }
         }
@@ -86,10 +86,10 @@ export class HeroesService{
 }
 
 export interface Heroe{
-       nombre:string;
-       bio:string;
-       img:string;
-       aparicion:string;
-       casa:string;
-       idx?:number;
+       nombre:    string;
+       bio:       string;
+       img:       string;
+       aparicion: string;
+       casa:      string;
+       idx?:      number;
 }

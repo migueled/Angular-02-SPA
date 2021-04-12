@@ -15,24 +15,25 @@ import { SearchComponent } from './components/search/search.component';
 import { CardsComponent } from './components/cards/cards.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    AboutComponent,
-    HeroesComponent,
-    HeroeComponent,
-    SearchComponent,
-    CardsComponent
-  ],
-  imports: [
-    BrowserModule,
-    APP_ROUTING
-  ],
-  providers: [
-    //servicios
-    HeroesService
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        HomeComponent,
+        AboutComponent,
+        HeroesComponent,
+        HeroeComponent,
+        SearchComponent,
+        CardsComponent
+    ],
+    imports: [
+        BrowserModule,
+        APP_ROUTING
+    ],
+    providers: [
+        //servicios
+        HeroesService
+    ],
+    bootstrap: [AppComponent]
 })
+
 export class AppModule { }

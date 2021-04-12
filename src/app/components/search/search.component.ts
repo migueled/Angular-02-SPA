@@ -11,26 +11,26 @@ import { Router } from '@angular/router';
 })
 export class SearchComponent implements OnInit {
 
-  heroes:any={};
-  termino:string;
+  heroes : any = {};
+  termino : string;
 
-  constructor(private activatedRoute: ActivatedRoute,
-              private _heroesServices:HeroesService,
-              private router:Router
+  constructor(private activatedRoute : ActivatedRoute,
+              private _heroesServices : HeroesService,
+              private router : Router
               ) {
               }
 
   ngOnInit(): void {
-      this.activatedRoute.params.subscribe(params=> {
-      this.termino=params['buscarpor'];
-      this.heroes=this._heroesServices.buscarHeroes(params['buscarpor']);
+      this.activatedRoute.params.subscribe( params => {
+      this.termino = params['buscarpor'];
+      this.heroes  = this._heroesServices.buscarHeroes(params['buscarpor']);
       });
   }
 
-  vacioobje(){
-    if(Object.entries(this.heroes).length === 0){      
+  vacioobje() {
+    if( Object.entries(this.heroes).length === 0 ){      
       return true;
-    }else{
+    } else {
       return false;
     }
   }

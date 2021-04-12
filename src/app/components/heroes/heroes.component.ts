@@ -9,16 +9,15 @@ import { Router } from '@angular/router';
 })
 export class HeroesComponent implements OnInit {
 
-  heroes:Heroe[]=[];
+  heroes : Heroe[] = [];
 
-  constructor( private _heroesService:HeroesService,
-    /*usando la opcion dos*/
-    private router:Router) { //usar servicio de heroesservices
-    //console.log('constructor');        
+  constructor( private _heroesService : HeroesService,
+               /*usando la opcion dos*/
+               private router : Router ) { //usar servicio de heroesservices  
   }
 
   ngOnInit(): void {
-    this.heroes=this._heroesService.getHeroes();
+    this.heroes = this._heroesService.getHeroes();
     //console.log(this.heroes);    
   }
   //usando la opcion 2 de redi
